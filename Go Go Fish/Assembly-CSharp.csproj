@@ -62,17 +62,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\fishMove.cs" />
+    <Compile Include="Assets\timerItemCreator.cs" />
+    <Compile Include="Assets\trashMove.cs" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>F:/Users/School/Documents/Go Go Fish/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>F:/Users/School/Documents/GitHub/SDP_Project_Go_Go_Fish/Go Go Fish/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>F:/Users/School/Documents/Go Go Fish/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>F:/Users/School/Documents/GitHub/SDP_Project_Go_Go_Fish/Go Go Fish/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>F:/Users/School/Documents/Go Go Fish/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>F:/Users/School/Documents/GitHub/SDP_Project_Go_Go_Fish/Go Go Fish/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>F:/Users/School/Documents/Go Go Fish/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>F:/Users/School/Documents/GitHub/SDP_Project_Go_Go_Fish/Go Go Fish/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>F:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -252,7 +254,7 @@
       <HintPath>F:/Program Files/Unity/Editor/Data/Managed/Unity.Locator.dll</HintPath>
     </Reference>
     <Reference Include="Facebook.Unity.Settings">
-      <HintPath>F:/Users/School/Documents/Go Go Fish/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+      <HintPath>F:/Users/School/Documents/GitHub/SDP_Project_Go_Go_Fish/Go Go Fish/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>F:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
