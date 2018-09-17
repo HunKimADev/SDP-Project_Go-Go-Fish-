@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class trashMove : MonoBehaviour {
+public class TrashScript : MonoBehaviour {
 
     int speed = 10;
     int iRandom = 0;

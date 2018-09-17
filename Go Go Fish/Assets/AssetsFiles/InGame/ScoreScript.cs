@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class scoreScript : MonoBehaviour {
+public class ScoreScript : MonoBehaviour {
     Text scoreText;
     int score = 1950;
     int scoreCount = 0;
@@ -17,7 +17,7 @@ public class scoreScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if(GameObject.Find("fish") != null)
+        if(GameObject.Find("FishPlayer") != null)
         {
             scoreCount++;
             scoreText.text = "Year: " + score;

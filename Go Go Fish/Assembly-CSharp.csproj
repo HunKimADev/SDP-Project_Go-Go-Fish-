@@ -61,10 +61,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\AssetsForGameScene\fishMove.cs" />
-    <Compile Include="Assets\AssetsForGameScene\scoreScript.cs" />
-    <Compile Include="Assets\AssetsForGameScene\timerItemCreator.cs" />
-    <Compile Include="Assets\AssetsForGameScene\trashMove.cs" />
+    <Compile Include="Assets\ArrowScript.cs" />
+    <Compile Include="Assets\AssetsFiles\InGame\FishScript.cs" />
+    <Compile Include="Assets\AssetsFiles\InGame\ScoreScript.cs" />
+    <Compile Include="Assets\AssetsFiles\InGame\TimerScript.cs" />
+    <Compile Include="Assets\AssetsFiles\InGame\TrashScript.cs" />
+    <Compile Include="Assets\TestQuitScript.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>F:/Users/School/Documents/GitHub/SDP_Project_Go_Go_Fish/Go Go Fish/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

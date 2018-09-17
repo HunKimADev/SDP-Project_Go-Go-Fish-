@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class timerItemCreator : MonoBehaviour {
+public class TimerScript : MonoBehaviour {
+    //int speed = 10;
+    //int score = 0;
     bool move = false;
-    int speed = 10;
     int difficultCounter = 0;
     float initialDifficult = 0.5f;
     float timer = 0f;
-    int score = 0;
 
     // Use this for initialization
     void Start () {

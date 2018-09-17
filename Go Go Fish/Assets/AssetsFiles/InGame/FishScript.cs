@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class fishMove : MonoBehaviour
+public class FishScript : MonoBehaviour
 {
 
     int speed = 10;
@@ -37,9 +37,18 @@ public class fishMove : MonoBehaviour
         transform.Translate(Vector3.up * speed * Time.smoothDeltaTime * keyVertical, Space.World);
     }
 
+    public void moveFishOnAndroid(float hInput, float vInput)
+    {
+        float keyHorizontal = hInput;
+        float keyVertical = vInput;
+
+        transform.Translate(Vector3.right * speed * Time.smoothDeltaTime * keyHorizontal, Space.World);
+        transform.Translate(Vector3.up * speed * Time.smoothDeltaTime * keyVertical, Space.World);
+    }
+
     void OnBecameInvisible()
     {
         Destroy(this.gameObject);
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        //SceneManager.LoadScene("TitleMenuScene");
     }
 }
