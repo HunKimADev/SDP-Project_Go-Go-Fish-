@@ -20,6 +20,14 @@ public class fishMove : MonoBehaviour
         moveFish();
     }
 
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag.Equals("Trash"))
+        {
+            Destroy(this.gameObject);
+        }
+    }
+
     void moveFish()
     {
         float keyHorizontal = Input.GetAxis("Horizontal");
@@ -31,6 +39,7 @@ public class fishMove : MonoBehaviour
 
     void OnBecameInvisible()
     {
+        Destroy(this.gameObject);
         //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

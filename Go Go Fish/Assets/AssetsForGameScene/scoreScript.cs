@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class scoreScript : MonoBehaviour {
     Text scoreText;
-    int score = 0;
+    int score = 1950;
+    int scoreCount = 0;
 
     // Use this for initialization
     void Start () {
@@ -15,7 +16,18 @@ public class scoreScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        score++;
-        scoreText.text = "Score: " + score;
+
+        if(GameObject.Find("fish") != null)
+        {
+            scoreCount++;
+            scoreText.text = "Year: " + score;
+
+            if (scoreCount == 60)
+            {
+                scoreCount = 0;
+                score++;
+            }
+        }
+
     }
 }
