@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Trash
+  - Seaweed
+  - Bomb
   layers:
   - Default
   - TransparentFX
