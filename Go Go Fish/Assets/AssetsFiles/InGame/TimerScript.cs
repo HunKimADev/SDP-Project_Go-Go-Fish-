@@ -13,8 +13,13 @@ public class TimerScript : MonoBehaviour {
     // Use this for initialization
     void Start () {
         GameObject go = Resources.Load("Trash") as GameObject;
+        GameObject go2 = Resources.Load("Seaweed") as GameObject;
+        GameObject go3 = Resources.Load("Bomb") as GameObject;
+
         //go.name = "TrashDynamic";
         Instantiate(go).name = "TrashDynamic";
+        Instantiate(go2).name = "SeaweedDynamic";
+        Instantiate(go3).name = "BombDynamic";
     }
 	
 	// Update is called once per frame
@@ -36,7 +41,12 @@ public class TimerScript : MonoBehaviour {
             timer = 0f;
 
             GameObject go = Resources.Load("Trash") as GameObject;
+            GameObject go2 = Resources.Load("Seaweed") as GameObject;
+            GameObject go3 = Resources.Load("Bomb") as GameObject;
+
             Instantiate(go).name = "TrashDynamic";
+            Instantiate(go2).name = "SeaweedDynamic";
+            Instantiate(go3).name = "BombDynamic";
 
             /*
             GameObject objectA = (GameObject) Resources.Load("Trash.png", typeof(GameObject));
