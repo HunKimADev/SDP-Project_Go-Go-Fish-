@@ -40,7 +40,11 @@ public class ScoreScript : MonoBehaviour {
 
             if(goBackTimer < 0)
             {
+<<<<<<< HEAD
                 SceneManager.LoadScene("TitleMenuScene");
+=======
+                SceneManager.LoadScene("MainMenu");
+>>>>>>> Neil
             }
         }
     }

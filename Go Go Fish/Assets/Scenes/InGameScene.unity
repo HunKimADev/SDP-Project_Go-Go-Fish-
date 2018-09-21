@@ -148,7 +148,11 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
   m_AnchoredPosition: {x: -414, y: -171.1}
+=======
+  m_AnchoredPosition: {x: -239, y: -102}
+>>>>>>> Neil
   m_SizeDelta: {x: 64, y: 64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &33724758
@@ -269,8 +273,13 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
   m_AnchoredPosition: {x: 190, y: 248}
   m_SizeDelta: {x: 160, y: 20.9}
+=======
+  m_AnchoredPosition: {x: 296.8, y: 138.8}
+  m_SizeDelta: {x: 216.3, y: 111.3}
+>>>>>>> Neil
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &43393403
 MonoBehaviour:
@@ -304,7 +313,15 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
+<<<<<<< HEAD
   m_Text: Go Go Fish Alpha version
+=======
+  m_Text: 'Go Go Fish
+
+    Alpha
+
+'
+>>>>>>> Neil
 --- !u!222 &43393404
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -409,7 +426,11 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
   m_AnchoredPosition: {x: -542, y: -171.1}
+=======
+  m_AnchoredPosition: {x: -367, y: -102}
+>>>>>>> Neil
   m_SizeDelta: {x: 64, y: 64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &80217934
@@ -1008,10 +1029,17 @@ RectTransform:
   m_Father: {fileID: 183264069}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -478, y: -107.1}
   m_SizeDelta: {x: 64, y: 64}
+=======
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -303, y: -38}
+  m_SizeDelta: {x: -746, y: -352}
+>>>>>>> Neil
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &979286451
 MonoBehaviour:
@@ -1132,8 +1160,13 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
   m_AnchoredPosition: {x: -180, y: 243.45}
   m_SizeDelta: {x: 160, y: 30}
+=======
+  m_AnchoredPosition: {x: 37.3, y: 157.2}
+  m_SizeDelta: {x: 272.6, y: 74.5}
+>>>>>>> Neil
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &980189158
 MonoBehaviour:
@@ -1156,7 +1189,11 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
     m_FontSize: 40
+=======
+    m_FontSize: 30
+>>>>>>> Neil
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 3
@@ -1308,8 +1345,13 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
   m_AnchoredPosition: {x: -485, y: 248}
   m_SizeDelta: {x: 160, y: 30}
+=======
+  m_AnchoredPosition: {x: -268, y: 159.5}
+  m_SizeDelta: {x: 274, y: 79.1}
+>>>>>>> Neil
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1590578896
 MonoBehaviour:
@@ -1332,12 +1374,21 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
     m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 6
     m_MaxSize: 60
     m_Alignment: 0
+=======
+    m_FontSize: 50
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 5
+    m_MaxSize: 60
+    m_Alignment: 1
+>>>>>>> Neil
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 1
@@ -1523,7 +1574,11 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
   m_AnchoredPosition: {x: -478, y: -235.1}
+=======
+  m_AnchoredPosition: {x: -303, y: -166}
+>>>>>>> Neil
   m_SizeDelta: {x: 64, y: 64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1734883856
