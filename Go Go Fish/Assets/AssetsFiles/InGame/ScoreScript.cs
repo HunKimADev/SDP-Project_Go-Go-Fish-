@@ -33,7 +33,7 @@ public class ScoreScript : MonoBehaviour {
         else
         {
             scoreText.text = "Year: " + score;
-            scoreText.text += "\n\n    FINAL YEAR (SCORE): " + score;
+            scoreText.text += "\n    FINAL YEAR (SCORE): " + score;
             scoreText.text += "\n                GAME OVER";
             scoreText.text += "\nWe go back to main (title) page in: " + goBackTimer/60;
             goBackTimer--;
