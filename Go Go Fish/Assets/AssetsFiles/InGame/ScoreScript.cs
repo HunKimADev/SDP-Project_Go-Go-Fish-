@@ -33,18 +33,14 @@ public class ScoreScript : MonoBehaviour {
         else
         {
             scoreText.text = "Year: " + score;
-            scoreText.text += "\n\n            FINAL YEAR (SCORE): " + score;
-            scoreText.text += "\n                        GAME OVER";
-            scoreText.text += "\n      We go back to main (title) page in: " + goBackTimer/60;
+            scoreText.text += "\n\n    FINAL YEAR (SCORE): " + score;
+            scoreText.text += "\n                GAME OVER";
+            scoreText.text += "\nWe go back to main (title) page in: " + goBackTimer/60;
             goBackTimer--;
 
             if(goBackTimer < 0)
             {
-<<<<<<< HEAD
-                SceneManager.LoadScene("TitleMenuScene");
-=======
                 SceneManager.LoadScene("MainMenu");
->>>>>>> Neil
             }
         }
     }
