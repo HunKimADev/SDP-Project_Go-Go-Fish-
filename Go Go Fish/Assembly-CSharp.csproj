@@ -53,6 +53,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AssetsFiles\DatabaseManager.cs" />
      <Compile Include="Assets\AssetsFiles\InGame\ArrowScript.cs" />
      <Compile Include="Assets\AssetsFiles\InGame\BombScript.cs" />
      <Compile Include="Assets\AssetsFiles\InGame\FishScript.cs" />

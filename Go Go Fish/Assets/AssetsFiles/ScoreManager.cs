@@ -15,7 +15,6 @@ public class ScoreManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         connectionString = "URI=file:" + Application.dataPath + "/gogofishDB.sqlite";
-        CreateTable();
         ShowScores();
 	}
 	
@@ -24,26 +23,6 @@ public class ScoreManager : MonoBehaviour {
 		
 	}
 
-    private void CreateTable()
-    {
-
-        using (IDbConnection dbConnection = new SqliteConnection(connectionString))
-        {
-            dbConnection.Open();
-            using (IDbCommand dbCmd = dbConnection.CreateCommand())
-            {
-                string sqlQuery = "CREATE TABLE IF NOT EXISTS scores(" +
-                    "score_ID INTEGER PRIMARY KEY," +
-                    "score INTEGER NOT NULL," +
-                    "date DATETIME NOT NULL DEFAULT CURRENT_DATE); ";
-
-                dbCmd.CommandText = sqlQuery;
-                dbCmd.ExecuteScalar();
-                dbConnection.Close();
-            }
-        }
-        
-    }
     private void ShowScores()
     {
         GetScores();
