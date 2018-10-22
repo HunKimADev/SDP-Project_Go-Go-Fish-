@@ -4,18 +4,25 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System;
+#if UNITY_STANDALONE_WIN
 using System.Data;
 using Mono.Data.Sqlite;
+#endif
 
-public class ScoreScript : MonoBehaviour {
+public class ScoreScript : MonoBehaviour
+{
+    public AudioClip soundGameOver;
+    private AudioSource sGameOver { get { return GetComponent<AudioSource>(); } }
 
     private string connectionString;
     Text scoreText;
     int score = 1950;
-    int goBackTimer = 300;
-    int scoreCount = 0;
+    int scoreInitial = 0;
+    int stage = 1;
+    int goBackTimer = -1;
+    bool playOnce = true;
 
-
+    #if UNITY_STANDALONE_WIN
     private void InsertScore(int newScore)
     {
         using (IDbConnection dbConnection = new SqliteConnection(connectionString))
@@ -31,13 +38,23 @@ public class ScoreScript : MonoBehaviour {
             }
         }
     }
+    #endif
+
+    public void stageUp()
+    {
+        stage++;
+    }
 
     // Use this for initialization
     void Start ()
     {
         connectionString = "URI=file:" + Application.dataPath + "/gogofishDB.sqlite";
         scoreText = GetComponent<Text>();
+        scoreInitial = (int)Time.time;
 
+        gameObject.AddComponent<AudioSource>();
+        sGameOver.clip = soundGameOver;
+        sGameOver.playOnAwake = false;
     }
 	
 	// Update is called once per frame
@@ -45,27 +62,34 @@ public class ScoreScript : MonoBehaviour {
 
         if(GameObject.Find("FishPlayer") != null)
         {
-            scoreCount++;
+            score = ((int)Time.time) + 1950 - scoreInitial;
             scoreText.text = "Year: " + score;
-
-            if (scoreCount == 60)
-            {
-                scoreCount = 0;
-                score++;
-            }
+            scoreText.text += "\nStage: " + stage;
+        }
+        else if(goBackTimer == -1)
+        {
+            goBackTimer = (int)Time.time + 5;
         }
         else
         {
-            scoreText.text = "Year: " + score;
-            scoreText.text += "\n    FINAL YEAR (SCORE): " + score;
-            scoreText.text += "\n                GAME OVER";
-            scoreText.text += "\nWe go back to main (title) page in: " + goBackTimer/60;
-            goBackTimer--;
-
-            if(goBackTimer < 0)
+            if(playOnce == true)
             {
+                sGameOver.PlayOneShot(soundGameOver);
+                playOnce = false;
+            }
 
+            if (((int)Time.time) <= goBackTimer)
+            {
+                scoreText.text = "Year: " + score;
+                scoreText.text += "\n\nYear of the Dead - " + score;
+                scoreText.text += "\nGAME OVER";
+                scoreText.text += "\nWe go back to main (title) page in: " + (goBackTimer - ((int)Time.time));
+            }
+            else if(((int)Time.time) > goBackTimer)
+            {
+                #if UNITY_STANDALONE_WIN
                 InsertScore(score);
+                #endif
                 SceneManager.LoadScene("MainMenu");
             }
         }

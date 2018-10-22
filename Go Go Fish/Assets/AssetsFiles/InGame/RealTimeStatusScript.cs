@@ -27,7 +27,7 @@ public class RealTimeStatusScript : MonoBehaviour {
                 livesText.text = "Life: " + fishLivesChecker.getLives();
             }
 
-            livesText.text += " | Energy: " + fishLivesChecker.getEnergy();
+            livesText.text += "\nEnergy: " + fishLivesChecker.getEnergy();
         }
 	}
 }

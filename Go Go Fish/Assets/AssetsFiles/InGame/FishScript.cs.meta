@@ -3,7 +3,12 @@ guid: 947358aa67b94fe4792356cc5bb17d79
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - soundSeaWeed: {fileID: 8300000, guid: 6632c9460ab9b83439cf9b638a2045e7, type: 3}
+  - soundTrash: {fileID: 8300000, guid: 0193b399091920342bb4cea25b9f7ac2, type: 3}
+  - soundBomb: {fileID: 8300000, guid: 0eef1b007c9adad43972ea5d67401850, type: 3}
+  - soundNextStage: {fileID: 8300000, guid: 9a68b38ac1416ee45a51ae107939e658, type: 3}
+  - soundGameOver: {fileID: 8300000, guid: 73ce3837131b4a04ea3e5dfbab1e1e79, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

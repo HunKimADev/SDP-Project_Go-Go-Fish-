@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+#if UNITY_STANDALONE_WIN
 using System.Data;
 using Mono.Data.Sqlite;
+#endif
 
 
 public class ScoreManager : MonoBehaviour {
@@ -15,7 +17,6 @@ public class ScoreManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         connectionString = "URI=file:" + Application.dataPath + "/gogofishDB.sqlite";
-        CreateTable();
         ShowScores();
 	}
 	
@@ -24,26 +25,6 @@ public class ScoreManager : MonoBehaviour {
 		
 	}
 
-    private void CreateTable()
-    {
-
-        using (IDbConnection dbConnection = new SqliteConnection(connectionString))
-        {
-            dbConnection.Open();
-            using (IDbCommand dbCmd = dbConnection.CreateCommand())
-            {
-                string sqlQuery = "CREATE TABLE IF NOT EXISTS scores(" +
-                    "score_ID INTEGER PRIMARY KEY," +
-                    "score INTEGER NOT NULL," +
-                    "date DATETIME NOT NULL DEFAULT CURRENT_DATE); ";
-
-                dbCmd.CommandText = sqlQuery;
-                dbCmd.ExecuteScalar();
-                dbConnection.Close();
-            }
-        }
-        
-    }
     private void ShowScores()
     {
         GetScores();
@@ -58,6 +39,7 @@ public class ScoreManager : MonoBehaviour {
     }
     private void DeleteScores()
     {
+#if UNITY_STANDALONE_WIN
         using (IDbConnection dbConnection = new SqliteConnection(connectionString))
         {
             dbConnection.Open();
@@ -70,8 +52,11 @@ public class ScoreManager : MonoBehaviour {
                 dbConnection.Close();
             }
         }
+#endif
     }
-    private void GetScores(){
+    private void GetScores()
+    {
+#if UNITY_STANDALONE_WIN
         scores.Clear();
         using (IDbConnection dbConnection = new SqliteConnection(connectionString)) {
             dbConnection.Open();
@@ -92,5 +77,6 @@ public class ScoreManager : MonoBehaviour {
                 }
             }
         }
+#endif
     }
 }
